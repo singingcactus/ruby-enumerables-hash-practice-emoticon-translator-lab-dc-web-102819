@@ -12,9 +12,8 @@ def load_library(file_path)
     }
   }
 
-  emoticon_file2 = YAML.load_file(file_path)
   emoticon_pairs = []
-  emoticon_pairs = emoticon_file2.map { |meaning, emoticons|
+  emoticon_pairs = emoticon_file.map { |meaning, emoticons|
     [emoticons]
     }
 
