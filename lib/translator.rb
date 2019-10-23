@@ -18,8 +18,8 @@ def load_library(file_path)
     }
 
   point_to_English = {}
-  emoticon_pairs.map { | English_emote, Japanese_emote |
-    point_to_English[Japanese_emote] = English_emote
+  emoticon_pairs.map { | english_emote, japanese_emote |
+    point_to_English[japanese_emote] = english_emote
   }
 
   puts point_to_English
