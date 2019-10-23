@@ -23,6 +23,8 @@ def load_library(file_path)
 
   point_to_Japanese = point_to_English.invert
 
+  puts point_to_Japanese
+
   result[:get_meaning] = point_to_meaning
   result[:get_emoticon] = point_to_English
   result[:get_j_emoticon] = point_to_Japanese
