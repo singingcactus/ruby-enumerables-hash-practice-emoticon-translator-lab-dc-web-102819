@@ -4,7 +4,7 @@ def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
 
   new_container = {}
-  new_file = emoticon_file.map { | meaning, emoticons |
+  emoticon_file.map { | meaning, emoticons |
     emoticons.map { | emoticon |
       new_container[emoticon] = meaning
     }
