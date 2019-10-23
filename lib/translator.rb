@@ -19,7 +19,7 @@ def load_library(file_path)
     }
 
   puts emoticon_pairs
-  
+
   result[:get_meaning] = point_to_meaning
 
   puts result
