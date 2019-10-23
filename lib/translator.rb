@@ -21,7 +21,7 @@ def load_library(file_path)
     [japanese_emoticon => english_emoticon]
     }]
 
-  puts emoticon_file
+  puts point_to_English
 
   result[:get_meaning] = point_to_meaning
 
