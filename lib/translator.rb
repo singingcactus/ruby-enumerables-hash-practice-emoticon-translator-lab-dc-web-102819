@@ -2,6 +2,8 @@ require "yaml"
 
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
+  result = {}
+
 
   point_to_meaning = {}
   emoticon_file.map { | meaning, emoticons |
@@ -9,6 +11,8 @@ def load_library(file_path)
       point_to_meaning[emoticon] = meaning
     }
   }
+
+  result[:get_meaning] = point_to_meaning
 
   result = {
     get_meaning: {
