@@ -10,7 +10,7 @@ def load_library(file_path)
     }
   }
 
-  puts new_file
+  puts new_container
 
   result = {
     get_meaning: {
