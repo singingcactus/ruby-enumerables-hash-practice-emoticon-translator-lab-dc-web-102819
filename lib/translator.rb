@@ -5,9 +5,7 @@ def load_library(file_path)
 #  puts emoticon_file
   result = {
     get_meaning: {
-      emoticon_file.select { |meaning,result_array|
-          result_array[1]
-      }
+
      },
     get_emoticon: {
      }
