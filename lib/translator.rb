@@ -1,7 +1,18 @@
 require "yaml"
 
 def load_library(file_path)
-  result = {}
+  result = {
+    get_meaning => {
+      nil
+    }
+    get_emoticon => {
+      nil
+    }
+  }
+
+
+
+
   result
 end
 
