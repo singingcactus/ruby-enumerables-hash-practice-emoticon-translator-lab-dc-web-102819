@@ -2,7 +2,6 @@ require "yaml"
 
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
-#  puts emoticon_file
 
   new_container = {}
   new_file = emoticon_file.map { | meaning, emoticons |
