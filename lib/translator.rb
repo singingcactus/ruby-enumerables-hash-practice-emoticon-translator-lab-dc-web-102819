@@ -3,6 +3,7 @@ require "yaml"
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
 #  puts emoticon_file
+  puts emoticon_file.invert
   result = {
     get_meaning: {
 
