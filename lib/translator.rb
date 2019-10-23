@@ -17,7 +17,10 @@ def load_library(file_path)
     [emoticons]
     }
 
-  puts emoticon_pairs.length
+  point_to_English = {}
+  emoticon_pairs.map { | English_emote, Japanese_emote |
+    point_to_English[Japanese_emote] = English_emote
+  }
 
   result[:get_meaning] = point_to_meaning
 
