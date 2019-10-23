@@ -3,10 +3,10 @@ require "yaml"
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
 
-  new_container = {}
+  point_to_meaning = {}
   emoticon_file.map { | meaning, emoticons |
     emoticons.map { | emoticon |
-      new_container[emoticon] = meaning
+      point_to_meaning[emoticon] = meaning
     }
   }
 
