@@ -2,10 +2,12 @@ require "yaml"
 
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
-  puts emoticon_file
+#  puts emoticon_file
   result = {
     get_meaning: {
-      emoticon_file[1] => emoticon_file
+      emoticon_file.select { |meaning,result|
+          result[0]
+      }
      },
     get_emoticon: {
      }
