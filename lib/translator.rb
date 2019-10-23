@@ -13,7 +13,6 @@ def load_library(file_path)
   result = {
     get_meaning: {
       point_to_meaning
-
       },
     get_emoticon: {
      }
