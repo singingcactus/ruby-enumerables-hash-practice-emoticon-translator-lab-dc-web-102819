@@ -12,15 +12,10 @@ def load_library(file_path)
     }
   }
 
+  puts point_to_meaning
   result[:get_meaning] = point_to_meaning
 
-  result = {
-    get_meaning: {
-
-      },
-    get_emoticon: {
-     }
-  }
+  puts result
 
 
   result
