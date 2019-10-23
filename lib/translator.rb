@@ -3,10 +3,21 @@ require "yaml"
 def load_library(file_path)
   emoticon_file = YAML.load_file(file_path)
 #  puts emoticon_file
-  puts emoticon_file.invert
+
+  new_container = {}
+  new_file = emoticon_file.map { | meaning, emoticons |
+    emoticons.map { | emoticon |
+      new_countainer[emoticon] = meaning 
+    }
+  }
+
+  puts new_file
+  
   result = {
     get_meaning: {
-
+       
+        
+      }
      },
     get_emoticon: {
      }
@@ -21,9 +32,6 @@ def get_japanese_emoticon(file_path, emoticon)
 end
 
 def get_english_meaning(file_path, emoticon)
-  if load_library(file_path) == nil
-    return "We're sorry, we cannot find the emoticon"
-  else
     load_library(file_path)
   end
 end
