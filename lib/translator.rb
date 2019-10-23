@@ -17,9 +17,9 @@ def load_library(file_path)
     [emoticons]
     }
 
-  point_to_English = {}
-  emoticon_pairs.map { | english_emote, japanese_emote |
-    point_to_English[japanese_emote] = english_emote
+  point_to_English = Hash[emoticon_pairs.map { | english_emoticon, japanese_emoticon |
+    [japanese_emoticon, english_emoticon]
+    }]
   }
 
   puts point_to_English
