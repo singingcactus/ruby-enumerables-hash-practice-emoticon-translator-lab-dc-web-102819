@@ -15,14 +15,12 @@ def load_library(file_path)
 
   emoticon_pairs = []
   emoticon_pairs = emoticon_file.map { |meaning, emoticons|
-    emoticons
+    [emoticons]
     }
 
   puts emoticon_pairs
 
   result[:get_meaning] = point_to_meaning
-
-  puts result
 
 
   result
