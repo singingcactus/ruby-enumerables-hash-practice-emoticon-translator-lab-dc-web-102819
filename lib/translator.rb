@@ -3,8 +3,6 @@ require "yaml"
 def load_library(file_path)
   loaded_file = YAML.load_file(file_path)
 
-  puts loaded_file.inspect
-
   result = {
     get_meaning: { },
     get_emoticon: { }
