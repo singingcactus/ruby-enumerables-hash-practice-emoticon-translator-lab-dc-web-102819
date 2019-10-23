@@ -10,8 +10,6 @@ def load_library(file_path)
     }
   }
 
-  puts new_container
-
   result = {
     get_meaning: {
       point_to_meaning
