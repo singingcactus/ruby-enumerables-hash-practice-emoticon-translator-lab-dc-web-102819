@@ -12,7 +12,12 @@ def load_library(file_path)
     }
   }
 
-  puts point_to_meaning
+
+  emoticon_pairs = []
+  emoticon_pairs = emoticon_file.map { |meaning, emoticons|
+    emoticons
+    }
+  
   result[:get_meaning] = point_to_meaning
 
   puts result
