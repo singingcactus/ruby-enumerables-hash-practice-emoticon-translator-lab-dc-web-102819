@@ -5,7 +5,7 @@ def load_library(file_path)
   puts emoticon_file
   result = {
     get_meaning: {
-
+      emoticon_file[1] => emoticon_file
      },
     get_emoticon: {
      }
