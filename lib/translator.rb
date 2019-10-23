@@ -6,7 +6,7 @@ def load_library(file_path)
   new_container = {}
   new_file = emoticon_file.map { | meaning, emoticons |
     emoticons.map { | emoticon |
-      new_countainer[emoticon] = meaning
+      new_container[emoticon] = meaning
     }
   }
 
