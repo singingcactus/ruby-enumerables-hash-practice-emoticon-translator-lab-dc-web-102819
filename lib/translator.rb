@@ -15,5 +15,8 @@ def get_japanese_emoticon(file_path, emoticon)
 end
 
 def get_english_meaning(file_path, emoticon)
-  load_library(file_path)
+  if load_library(file_path) == nil
+    return "We're sorry, we cannot find the emoticon"
+  else
+    load_library(file_path)
 end
