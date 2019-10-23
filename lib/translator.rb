@@ -1,13 +1,8 @@
 require "yaml"
 
 def load_library(file_path)
-
-
-
-  return {
-    :get_meaning => value1,
-    :get_emoticon => value2
-  }
+  result = {}
+  result
 end
 
 def get_japanese_emoticon(file_path, emoticon)
