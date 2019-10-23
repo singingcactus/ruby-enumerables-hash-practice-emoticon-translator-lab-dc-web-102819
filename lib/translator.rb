@@ -22,8 +22,9 @@ def load_library(file_path)
     point_to_English[Japanese_emote] = English_emote
   }
 
+  puts point_to_English
+
   result[:get_meaning] = point_to_meaning
-  result[:get_emoticon] = point_to_English
 
 
   result
